@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .section {
+    background: #f3f4f6;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  #skills {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-item {
+    padding: 10px 20px;
+    background: #2575fc;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  
+  footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #f4f4f4; /* Optional: Footer background */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Padding for some spacing */
+    font-size: 14px; /* Adjust font size if needed */
+    color: #333; /* Text color */
+  }
+  
